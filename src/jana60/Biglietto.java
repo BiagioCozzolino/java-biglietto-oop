@@ -11,24 +11,6 @@ public class Biglietto {
 
 	DecimalFormat df = new DecimalFormat("#0.00€");
 
-	// Getter e setter
-
-	public double getKilometri() {
-		return kilometri;
-	}
-
-	public void setKilometri(double kilometri) {
-		this.kilometri = kilometri;
-	}
-
-	public int getEtaPasseggero() {
-		return etaPasseggero;
-	}
-
-	public void setEtaPasseggero(int etaPasseggero) {
-		this.etaPasseggero = etaPasseggero;
-	}
-
 	// Costruttore
 	public Biglietto(int etaPasseggero, int kilometri) {
 		super();
@@ -64,7 +46,7 @@ public class Biglietto {
 		} else {
 			messaggio += "Mi dispiace non hai diritto a nessuno sconto";
 		}
-		return messaggio += "\n Il costo finale del biglietto è di" + formattaPrezzo();
+		return messaggio += "\n Il costo finale del biglietto è di" + " " + formattaPrezzo();
 
 	}
 
